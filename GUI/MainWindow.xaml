@@ -1,0 +1,22 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="20" VerticalAlignment="Center">
+        <ProgressBar x:Name="MyProgressBar" Height="25" Minimum="0" Maximum="100" Value="0" Margin="0,0,0,20" />
+        <Button x:Name="BtnChoose" Content="Choose File" Height="35" Margin="0,0,0,10" Click="BtnChoose_Click"/>
+        <Button x:Name="BtnStart" Content="Start Background Process" Height="35" Margin="0,0,0,10" Click="BtnStart_Click" IsEnabled="False"/>
+        <Button x:Name="BtnRunWithoutThreads"
+        Content="Run Without Threads"
+        Click="BtnRunWithoutThreads_Click"
+        IsEnabled="False"
+        Margin="5"
+        Padding="10,5"/>
+        <Button x:Name="BtnReset" Content="Reset" Height="35" Click="BtnReset_Click"/>
+
+    </StackPanel>
+</Window>
